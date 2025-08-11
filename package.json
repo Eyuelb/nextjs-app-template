@@ -23,6 +23,7 @@
     "clsx": "^2.1.1",
     "jwt-decode": "^4.0.0",
     "next": "latest",
+    "next-intl": "^4.3.4",
     "next-nprogress-bar": "^2.4.7",
     "react": "latest",
     "react-dom": "latest",

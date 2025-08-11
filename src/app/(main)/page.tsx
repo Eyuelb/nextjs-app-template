@@ -1,3 +1,4 @@
+import { TypeSafeLocale } from "@/components/common/type-safe-t";
 import { Box, Text, Title } from "@mantine/core";
 
 export default function Home() {
@@ -30,12 +31,10 @@ export default function Home() {
         maw={580}
         mx="auto"
         mt="xl"
+        fw={600}
       >
-        This starter Next.js project includes a minimal setup for Mantine with
-        TailwindCSS. To get started edit page.tsx file.
+        <TypeSafeLocale tKey="common.header" />
       </Text>
-
-      <div className="flex justify-center mt-10"></div>
     </Box>
   );
 }

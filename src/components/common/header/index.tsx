@@ -4,6 +4,7 @@ import { Box, Group } from "@mantine/core";
 import { ThemeToggleButton } from "../theme-toggle-button";
 import UserProfileButton from "@/components/profiles/profile-button";
 import { Brand } from "../brand";
+import LocaleSwitcherSelect from "../locale-switcher-select";
 
 function Header() {
   // const path = usePathname();
@@ -31,7 +32,7 @@ function Header() {
   //   </UnstyledButton>
   // ));
   return (
-    <header className="glass flex items-center h-[58px] w-full max-[600px]:h-[50x] fixed top-0">
+    <header className="bg-[var(--card)] glass flex items-center h-[58px] w-full max-[600px]:h-[50x] fixed top-0">
       <Box visibleFrom="md" className="w-full">
         <nav className=" pr-16 pl-6 text-white w-full">
           <Group
@@ -43,6 +44,7 @@ function Header() {
             <Group>
               <UserProfileButton />
               <ThemeToggleButton />
+              <LocaleSwitcherSelect />
             </Group>
           </Group>
         </nav>
@@ -56,6 +58,7 @@ function Header() {
           <Group>
             <UserProfileButton />
             <ThemeToggleButton />
+            <LocaleSwitcherSelect />
           </Group>
         </Group>
       </Box>
